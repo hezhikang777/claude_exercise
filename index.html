@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张三 | 个人主页</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">ZS</a>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">关于</a></li>
+        <li><a href="#skills" class="nav-link">技能</a></li>
+        <li><a href="#projects" class="nav-link">项目</a></li>
+        <li><a href="#contact" class="nav-link">联系</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- 英雄区域 -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 你好，我是</p>
+      <h1 class="hero-name">张 三</h1>
+      <p class="hero-title">
+        <span class="typewriter" id="typewriter"></span>
+        <span class="cursor">|</span>
+      </p>
+      <p class="hero-description">
+        热爱技术，专注于创造优雅、高性能的数字产品。
+        致力于用代码让世界变得更美好。
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> 查看作品
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> 联系我
+        </a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="mailto:zhangsan@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="向下滚动">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- 关于我 -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="about-image">
+            <div class="image-placeholder">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-label">年经验</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="30">0</span>
+              <span class="stat-label">完成项目</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="15">0</span>
+              <span class="stat-label">满意客户</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>一名充满热情的 <span class="highlight">全栈开发者</span></h3>
+          <p>
+            我是一名拥有5年经验的全栈开发者，擅长构建高质量的 Web 应用程序。
+            从前端精美的用户界面到后端稳健的服务架构，我热衷于将创意转化为
+            可用的产品。
+          </p>
+          <p>
+            我毕业于清华大学计算机科学专业，曾在多家科技公司担任核心开发角色。
+            我相信技术的力量可以改变人们的生活，并始终在追求技术与美学的完美结合。
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>中国 · 北京</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>清华大学 · 计算机科学</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-briefcase"></i>
+              <span>开放工作机会</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">
+            <i class="fas fa-download"></i> 下载简历
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能 -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">专业技能</h2>
+      <p class="section-subtitle">不断学习与成长，这是我的技术工具箱</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>前端开发</h3>
+          <p>React, Vue.js, TypeScript, Next.js, Tailwind CSS</p>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 95%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-server"></i></div>
+          <h3>后端开发</h3>
+          <p>Node.js, Python, Go, PostgreSQL, Redis</p>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>移动开发</h3>
+          <p>React Native, Flutter, Swift, Kotlin</p>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+          <h3>云计算 & DevOps</h3>
+          <p>AWS, Docker, Kubernetes, CI/CD, Terraform</p>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>UI/UX 设计</h3>
+          <p>Figma, Adobe XD, 设计系统, 用户研究</p>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-brain"></i></div>
+          <h3>AI & 机器学习</h3>
+          <p>TensorFlow, PyTorch, LLM, RAG, LangChain</p>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 项目 -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">精选项目</h2>
+      <p class="section-subtitle">每一个项目都是一段独特的旅程</p>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="web">Web 应用</button>
+        <button class="filter-btn" data-filter="mobile">移动端</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Web 应用</span>
+            <h3>电商平台</h3>
+            <p>基于 Next.js 构建的全栈电商平台，支持实时库存管理和智能推荐</p>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="ai">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">AI</span>
+            <h3>智能客服系统</h3>
+            <p>基于 LLM 和 RAG 技术的智能客服，支持多轮对话和知识库检索</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>LangChain</span>
+              <span>FastAPI</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="mobile">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">移动端</span>
+            <h3>健身追踪 App</h3>
+            <p>React Native 跨平台应用，集成健康数据同步和 AI 训练计划</p>
+            <div class="project-tech">
+              <span>React Native</span>
+              <span>Firebase</span>
+              <span>TensorFlow</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Web 应用</span>
+            <h3>数据分析仪表盘</h3>
+            <p>实时数据可视化平台，支持自定义图表和团队协作功能</p>
+            <div class="project-tech">
+              <span>Vue.js</span>
+              <span>D3.js</span>
+              <span>WebSocket</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="ai">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-image"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">AI</span>
+            <h3>AI 图像生成平台</h3>
+            <p>基于 Stable Diffusion 的图像生成服务，支持提示词优化和批量处理</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Stable Diffusion</span>
+              <span>React</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="mobile">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-wallet"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">移动端</span>
+            <h3>个人理财助手</h3>
+            <p>Flutter 跨平台理财应用，AI 驱动的消费分析和预算建议</p>
+            <div class="project-tech">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>ML Kit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系方式 -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <p class="section-subtitle">有项目想合作？随时联系我！</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>让我们聊聊</h3>
+          <p>我始终对新机会和合作保持开放态度。如果你有任何问题或想法，请随时联系。</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>邮箱</h4>
+                <span>zhangsan@example.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>电话</h4>
+                <span>+86 138-0000-0000</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>地址</h4>
+                <span>北京市海淀区</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="你的名字" required>
+            <label for="name">你的名字</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="你的邮箱" required>
+            <label for="email">你的邮箱</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="主题">
+            <label for="subject">主题</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="你的消息" required></textarea>
+            <label for="message">你的消息</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> 发送消息
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">ZS</a>
+        <p>&copy; 2024 张三. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#about">关于</a>
+          <a href="#skills">技能</a>
+          <a href="#projects">项目</a>
+          <a href="#contact">联系</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 回到顶部 -->
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
